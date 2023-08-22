@@ -7,7 +7,7 @@
     <title>Personal Website HTML</title>
 </head>
 <body>
-    <img src="logo-UP.png">
+    <img src="./Images/logo-UP.png" alt="Logo de la UP"/>
     <!--This is the title-->
     <h1>Demián Velasco</h1>
     <!--This is the text-->
@@ -17,6 +17,10 @@
         Quotated text: <blockquote>"LOL" -- No one</blockquote><br>
     </p>
 
+    <a href="#recent" alt="My recent activities" >
+        My recent activities
+    </a>
+
     <h2>Education</h2>
 
     <ul>
@@ -24,7 +28,10 @@
         <li>2011 - 2012: <b>Colegio Nuevo Cordova</b></li>
         <li>2012 - 2017: <b>Colegio Camelot</b></li>
         <li>2017 - 2019: <b>Colegio Camelot</b></li>
-        <li>2019 - 2022: <b>UNIVA - Preparatoria</b></li>
+        <li>2019 - 2022: <b>UNIVA - Preparatoria</b><br>
+            <img src="https://seeklogo.com/images/U/UNIVA_-_UNIVERSIDAD_DEL_VALLE_DE_ATEMAJAC-logo-6A5000E3BB-seeklogo.com.png" 
+            alt="Logo de la UNIVA" width="25%" />
+        </li>
         <li>2022: <b>Universidad Panamericana (UP)</b></li>
     </ul>
 
@@ -36,7 +43,7 @@
         <li>Programming HTML: <em>65%</em></li>
     </ol>
 
-    <h3>Hobbies</h3>
+    <h3 id="recent">My last 3...</h3>
     <ul>
         <li><span>Movies</span>
         <ol>
@@ -58,7 +65,71 @@
             <li>The Sandman</li>
             <li>Bluey</li>
         </ol>
-    </li>
+        </li>
     </ul>
+
+    <a href="./destination.html" alt="Link to destination page">My favorite destinations</a>
+    <a href="http://google.com" alt="Link to destination page" target="_blank">Google</a>
+
+    <h2>My family's birthday</h2>
+    <table border="1">
+        <thead >
+            <tr>
+                <th></th>
+                <th colspan="2">Name</th>
+                <th colspan="2"></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Last name</th>
+                <th>Birth date</th>
+                <th>Birth place</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">C</td>
+                <td>Jose</td>
+                <td>Castillo</td>
+                <td>March 1st</td>
+            </tr>
+            <tr>
+                <td>Jose</td>
+                <td>Castillo</td>
+                <td>March 1st</td>
+                <td>Zapopan</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>100</td>
+            </tr>
+        </tfoot>
+    </table><br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Logo</th>
+                <th>Name/Years attending</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center"><img src="https://seeklogo.com/images/U/UNIVA_-_UNIVERSIDAD_DEL_VALLE_DE_ATEMAJAC-logo-6A5000E3BB-seeklogo.com.png" 
+                alt="Logo de la UNIVA" width="50%" /></td>
+            </tr>
+            <tr>
+                <td>2003 - 2011: <b>Kinder Millenium</b></td>
+                <td>2011 - 2012: <b>Colegio Nuevo Cordova</b></td>
+                <td>2012 - 2017: <b>Colegio Camelot</b></td>
+                <td>2017 - 2019: <b>Colegio Camelot</b></td>
+                <td>2019 - 2022: <b>UNIVA - Preparatoria</b></td>
+                <td>2022: <b>Universidad Panamericana (UP)</b></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
