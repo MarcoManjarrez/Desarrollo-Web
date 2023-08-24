@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website HTML</title>
 </head>
-<body>
-    <img src="./Images/logo-UP.png" alt="Logo de la UP"/>
-    <!--This is the title-->
-    <h1>Demián Velasco</h1>
-    <!--This is the text-->
-    <p>Student in Lic. Ingeniería en Sistemas y Gráficas Computacionales.<br>
-        My address is <i>Calzada Nueva 49</i>, Ciudad Granja, <b>Zapopan</b>, JAL. 45010<br>
-        My address is <em>Calzada Nueva 49</em>, Ciudad Granja, <strong>Zapopan</strong>, JAL. 45010<br>
-        Quotated text: <blockquote>"LOL" -- No one</blockquote><br>
-    </p>
+<body background="Images/lol-no.gif">
+    <div id="header_info" style="background-color: lightblue;">
+        <img src="./Images/logo-UP.png" alt="Logo de la UP" width="50%"/>
+        <!--This is the title-->
+        <h1>Demián Velasco</h1>
+        <!--This is the text-->
+        <p>Student in Lic. Ingeniería en Sistemas y Gráficas Computacionales.<br>
+            My address is <i>Calzada Nueva 49</i>, Ciudad Granja, <b>Zapopan</b>, JAL. 45010<br>
+            My address is <em>Calzada Nueva 49</em>, Ciudad Granja, <strong>Zapopan</strong>, JAL. 45010<br>
+            Quotated text: <blockquote>"LOL" -- No one</blockquote><br>
+        </p>
+    </div>
+
+    
 
     <a href="#recent" alt="My recent activities" >
         My recent activities
@@ -133,7 +137,7 @@
     </table>
 
     <h2>Contact me</h2>
-    <form>
+    <form action="#" method="get">
         <table border="1" style="width: 50%;">
             <tr>
                 <td><label for="user_name">Name</label></td>
@@ -156,7 +160,7 @@
                 <td><input type="color" name="user_color"></td>
             </tr>
             <tr>
-                <td colspan="2"><textarea id="msg">Write a message</textarea></td>
+                <td colspan="2"><textarea name="msg" id="msg">Write a message</textarea></td>
             </tr>
             <tr>
                 <td colspan="2"><input type="submit" value="Hit me"></td>
