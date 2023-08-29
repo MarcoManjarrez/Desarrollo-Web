@@ -1,0 +1,48 @@
+div {
+    background-color: brown;
+    color: lightgray;
+}
+
+p {
+    font-family: cursive;
+}
+
+tbody {
+    background-color: lightgray;
+}
+
+#Vatican_City_Table{
+    background-color: lightgoldenrodyellow;
+    color: darkgoldenrod;
+    border-color: gold;
+    border-width: 1cm;
+    border-style: dotted;
+}
+
+.destination {
+    background-color: darkslategray;
+    color: yellow;
+    border-color: red;
+    border-width: 1cm;
+    border-style: dashed;
+}
+
+.destination tbody {
+    background-color: darkred;
+}
+
+.destination td {
+    background-color: black;
+}
+
+.destination>p {
+    color: aqua;
+}
+
+.promoted {
+    font-size: x-large;
+}
+
+.destination.promoted {
+    color: crimson;
+}
