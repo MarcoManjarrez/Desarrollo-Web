@@ -46,3 +46,60 @@ tbody {
 .destination.promoted {
     color: crimson;
 }
+
+blockquote {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    padding-left: 50px;
+    padding-top: 10px;
+    border: darkred dashed 3px;
+    margin-inline-start: 50px;
+    margin-inline-end: 50px;
+}
+
+/*Apply to all after it*/
+h1~blockquote {
+    color: yellow;
+}
+
+/*The one next to it*/
+h1+blockquote {
+    color: blueviolet;
+}
+
+.lols {
+    display: inline;
+}
+
+.lols .no1 .no2{
+    display: block;
+}
+
+.lols:hover .no1 {
+    display: none;
+}
+
+.lols .no2 {
+    display: none;
+    visibility: hidden;
+}
+
+.lols:hover .no2 {
+    display: block;
+    visibility: visible;
+}
+
+.schools {
+    color: greenyellow;
+}
+
+.schools li:first-child {
+    color: yellow;
+}
+
+.schools li::first-letter {
+    font-size: x-large;
+}
