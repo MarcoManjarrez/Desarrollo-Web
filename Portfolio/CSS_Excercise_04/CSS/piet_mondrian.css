@@ -1,0 +1,36 @@
+div {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border: black solid 10px;
+}
+
+.top-container {
+    background-color: red;
+    position: absolute;
+    height: 250px;
+    width: 225px;
+    left: 320px;
+    top: 40px;
+}
+
+.mid-container {
+    background-color: blue;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    height: 100px;
+}
+
+.low-container {
+    background-color: yellow;
+    position: absolute;
+    left: 0px;
+    visibility: hidden;
+}
+
+.blank-container {
+    background-color: white;
+    position: absolute;
+    left: 0px;
+}

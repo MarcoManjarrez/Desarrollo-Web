@@ -6,18 +6,21 @@ div {
 
 .top-container {
     background-color: red;
-    position: relative;
+    position: absolute;
     left: 400px;
+    top: 400px;
 }
 
 .mid-container {
     background-color: blue;
     position: absolute;
-    left:0px;
+    left: 200px;
+    top: 200px;
 }
 
 .low-container {
     background-color: yellow;
-    position: relative;
-    left: -8px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
