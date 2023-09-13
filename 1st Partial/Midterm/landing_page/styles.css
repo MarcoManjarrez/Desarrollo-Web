@@ -1,11 +1,11 @@
 body {
     max-width: 1440px;
-    padding-left: 200px;
-    padding-right: 200px;
 }
 
 .heading1 {
     padding-bottom: 100px;
+    padding-left: 200px;
+    padding-right: 150px;
 }
 
 .heading1_image {
@@ -23,6 +23,9 @@ body {
 .bodypart_1 {
     display: inline-block;
     padding-top: 20px;
+    margin-bottom: 400px;
+    padding-left: 200px;
+    padding-right: 150px;
 }
 
 .bodypart_1_image {
@@ -43,24 +46,175 @@ body {
 }
 
 .input_bodypart1_text {
-    width: 25%;
     height: 30px;
-    padding-right: 190px;
+    padding-right: 100px;
     padding-left: 10px;
-    margin-right: 10px;
+    margin-right: 25px;
     margin-top: 20px;
 }
 
 .input_bodypart1_btn {
-    background-color: dodgerblue;
+    background-color:  #3065F8;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
+    border-radius: 5px;
+    border: none;
     padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
 }
 
-.h1 {
+.input_bodypart1_btn:hover {
+    background-color:  #7fa1fd;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+
+.bodypart_2 {
+    display: inline-block;
+    background-color: #F6F6FE;
+    max-width: 1440px;
+    padding-bottom: 100px;
+    padding-left: 200px;
+    padding-right: 100px;
+    margin-right: -10px;
+}
+
+.bodypart_2_image {
+    float: right;
+    position: relative;
+    width: 55.5%;
+    left: 50px;
+}
+
+#illustration-2 {
+    width: 95%;
+    float: right;
+}
+
+.bodypart_2_text {
+    width: 39%;
+    float: left;
+    position: absolute;
+    font-size: 87%;
+}
+
+.bodypart_2_text h1 {
+    margin-top: 0;
+}
+
+.bodypart_2_text .ref_1 {
+    color: #3C9F8F;
+}
+
+.kylo_ren_text {
+    padding: 20px;
+    width: 50%;
+    border-radius: 5px;
+    background-color: white;
+    font-size: small;
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+
+#kylo_ren_img {
+    float: left;
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+
+.bodypart_3 {
+    display: inline-block;
+    max-width: 1440px;
+    background-color: #585989;
+    margin-top: -5px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 200px;
+    padding-right: 100px;
+    color: white;
+    font-size: 80%;
+}
+
+.bodypart_3_text_1 {
+    float: left;
+    width: 38%;
+    margin-right: 200px;
+}
+
+.bodypart_3_text_2 {
+    float: inline-start;
+    padding-top: 10px;
+}
+
+.input_bodypart3_text {
+    height: 30px;
+    padding-right: 100px;
+    padding-left: 10px;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
+.input_bodypart3_btn {
+    background-color:  #3065F8;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 10px;
+}
+
+.input_bodypart3_btn:hover {
+    background-color:  #7fa1fd;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 10px;
+}
+
+.bodypart_4 {
+    background-color: #070439;
+    color: white;
+    display: inline-block;
+    max-width: 1440px;
+    max-height: 400px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 200px;
+    padding-right: 100px;
+}
+
+.bodypart_4_text_1 {
+    float: left;
+    padding-right: 125px;
+}
+
+.bodypart_4 .file_img {
+    display: block;
+    padding-bottom: 50px;
+}
+
+.bodypart_4 td {
+    padding-right: 175px;
 }
