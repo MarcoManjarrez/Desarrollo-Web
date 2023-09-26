@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next prime</title>
+
+    <script type="text/javascript">
+
+        function checkPrime() {
+            var id = document.getElementById("num");
+            var number = parseInt (document.getElementById("num").value);
+            var isPrime=true;
+
+            if (number == 1 || number == 0) {
+                window.alert(number + " is neither a prime or not prime number");
+                id.value = "";
+            }
+            else if (number > 1 && !isNaN(number)) {
+                for(var i = 2; i<number; i++) {
+                    if (number % i == 0) {
+                        isPrime=false;
+                        break;
+                    }
+                }
+
+                if (isPrime) window.alert(number + " is a prime number");
+                else window.alert(number + " is not a prime number");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <input type="text" id="num" />
+            <button id="btn" onclick="checkPrime();return false">
+                Click To Get Next Prime Number</button>
+        </div>
+</body>
+</html>
