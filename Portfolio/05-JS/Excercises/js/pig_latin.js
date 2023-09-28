@@ -1,10 +1,8 @@
-var memo = {0:1, 1:1};
-
-function fibonacci() {
+function piglatin() {
     "use strict";
     var n = document.getElementById("num").value;
     var val = f(n);
-    document.getElementById("fibonacciLbl").textContent = val;
+    document.getElementById("pigLbl").textContent = val;
 }
 
 function f(n) {

@@ -1,0 +1,126 @@
+* {
+    font-size: 16px;
+}
+
+div {
+    background-color: brown;
+    color: lightgray;
+}
+
+p {
+    font-family: cursive;
+}
+
+tbody {
+    background-color: lightgray;
+}
+
+#Vatican_City_Table{
+    background-color: lightgoldenrodyellow;
+    color: darkgoldenrod;
+    border-color: gold;
+    border-width: 1cm;
+    border-style: dotted;
+}
+
+.destination {
+    background-color: darkslategray;
+    color: yellow;
+    border-color: red;
+    border-width: 1cm;
+    border-style: dashed;
+}
+
+.destination tbody {
+    background-color: darkred;
+}
+
+.destination td {
+    background-color: black;
+}
+
+.destination>p {
+    color: aqua;
+}
+
+.promoted {
+    font-size: x-large;
+}
+
+.destination.promoted {
+    color: crimson;
+}
+
+blockquote {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#header_info {
+    text-align: right;
+}
+
+#header_info h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: aquamarine;
+}
+
+h1+#Logo_UP {
+    margin: 10px;
+    margin-left: 30px;
+    float: left;
+}
+
+h1 {
+    padding-left: 50px;
+    padding-top: 10px;
+    border: darkred dashed 3px;
+    margin-inline-start: 50px;
+    margin-inline-end: 50px;
+}
+
+/*Apply to all after it*/
+#Logo_UP~blockquote {
+    color: yellow;
+}
+
+/*The one next to it*/
+#Logo_UP+blockquote {
+    color: blueviolet;
+}
+
+.lols {
+    display: inline;
+}
+
+.lols .no1 .no2{
+    display: block;
+}
+
+.lols:hover .no1 {
+    display: none;
+}
+
+.lols .no2 {
+    display: none;
+    visibility: hidden;
+}
+
+.lols:hover .no2 {
+    display: block;
+    visibility: visible;
+}
+
+.schools {
+    color: greenyellow;
+}
+
+.schools li:first-child {
+    color: yellow;
+}
+
+.schools li::first-letter {
+    font-size: x-large;
+}

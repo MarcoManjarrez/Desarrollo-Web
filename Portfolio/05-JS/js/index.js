@@ -19,4 +19,20 @@ function callAction() {
     document.querySelector(".list #first").classList.toggle("highlight");
 
     document.querySelector("a").setAttribute("href", "https://www.google.com/?hl=es");
+
+    $("h1").text("Jquery rocks");
+    $(".special").addClass("highlight");
+    $("a").attr("href", "https://up.edu.mx");
+
+    $("button").click( (e) => {
+        console.log(e);
+        console.log(e.target.innerText);
+        alert(e.target.innerText + " was clicked");
+    });
+
+    $(".sampler").before("<h2>I'm the new guy</h2>");
+
+    $(".sampler").fadeOut();
+    $("#first").slideUp().fadeIn();
 }
+
