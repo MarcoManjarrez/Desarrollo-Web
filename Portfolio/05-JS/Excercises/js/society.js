@@ -1,6 +1,6 @@
 var myGamePiece = new Array;
-var happySrc = "smiley.gif";
-var sadSrc = "angry.gif";
+var happySrc = "./images/smiley.gif";
+var sadSrc = "./images/angry.gif";
 var maxDist = 5;
 
 var myGameArea = {
@@ -8,8 +8,8 @@ var myGameArea = {
     running: true,
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 800;
-        this.canvas.height = 600;
+        this.canvas.width = screen.width;
+        this.canvas.height = screen.height;
         this.context = this.canvas.getContext("2d");
         this.context.font = '12px serif';
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
