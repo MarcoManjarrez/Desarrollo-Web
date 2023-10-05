@@ -13,12 +13,14 @@ fs.readFile("input.txt", "utf-8", (err, fd) => {
 /*const sw = require('star-wars-quotes');
 console.log(sw());*/
 
+/*
 function getRandomInt(min, max) {
 	min = Math.ceil(min);
 	max = Math.floor(max);
 	return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
-}
+}*/
 
+/*
 const superheroes = require('superheroes');
 var superhero = superheroes.random();
 
@@ -77,3 +79,13 @@ function readHandler(err, fd) {
 }
 
 fs.readFile("input.txt", "utf-8", readHandler);*/
+
+const superheroes = require("superheroes");
+
+const supervillains = require("supervillains");
+
+var superhero = superheroes.random();
+
+var supervillain = supervillains.random();
+
+console.log("- Look it is " + supervillain + " ready to do its evil deeds!\n- Who could save us!\n- Fear not! Here is " + superhero + " to the rescue!");
