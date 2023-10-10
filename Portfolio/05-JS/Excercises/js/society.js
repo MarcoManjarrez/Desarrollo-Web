@@ -8,8 +8,8 @@ var myGameArea = {
     running: true,
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = screen.width;
-        this.canvas.height = screen.height;
+        this.canvas.width = screen.width-(screen.width*.025);
+        this.canvas.height = screen.height-(screen.height*.215);
         this.context = this.canvas.getContext("2d");
         this.context.font = '12px serif';
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
