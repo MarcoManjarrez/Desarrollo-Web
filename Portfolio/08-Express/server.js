@@ -2,6 +2,8 @@ const express = require('express');
 const bodyparser = require('body-parser');
 const app = express();
 
+const https = require("https");
+
 app.use(express.static("public"));
 
 app.use(bodyparser.urlencoded({extended: true}));
@@ -15,6 +17,40 @@ let name = "Demian";
 app.get('/', (req, res) => {
     res.render("index", { name: name });
 });
+
+const url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,sexist,explicit&type=single"
+app.get('/joke', (req, res) => {
+    https.get(url, (response) => {
+        //console.log(response);
+        if (response.statusCode == 200) {
+            response.on('data', (data) => {
+                //console.log(data);
+                const joke = JSON.parse(data);
+                //console.log(joke);
+                res.write("<h1 style=\"font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif\">" + joke.joke + "</h1>");
+                res.send();
+            });
+        } else {
+            throw new Error("Bad response");
+        }
+    });
+});
+
+/*
+const url2 = "https://api.toys/api/api/rock_paper_scissors";
+app.get('/rock_paper_scissors', (req, res) => {
+    https.get(url2, (response) => {
+        //console.log(response);
+        response.on('data', (data) => {
+            //console.log(data);
+            const game = JSON.parse(data);
+            //console.log(joke);
+            res.write("Player = " + game.player + "\nCPU = " + game.cpu + "\nWinner = " + game.winner + "\nMove = " + game.move);
+            res.send();
+        });
+    });
+});
+*/
 
 app.get('/about', (req, res, next) => {
     var loc_name = req.query.name;
