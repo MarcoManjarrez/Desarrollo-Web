@@ -1,0 +1,22 @@
+{
+  "name": "2nd-midterm",
+  "version": "1.0.0",
+  "description": "Node npm for 2nd midterm",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "midterm"
+  ],
+  "author": "Demian and Marco",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}
